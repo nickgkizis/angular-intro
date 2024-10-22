@@ -10,13 +10,13 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   styleUrl: './list-group-menu.component.css'
 })
 export class ListGroupMenuComponent {
-  menu: MenuEntry[] = [
-    {text:"Component input example", routerLink:"component-input-example"},
-    {text:"@for directives", routerLink:"for-directive-example"},
-    {text:"event bind", routerLink:"event-bind-example"},
-    {text:"simple datatables", routerLink:"simple-datatable"},
-    {text:"component output example", routerLink:"comp-out"},
-    {text:"Template Driven Form", routerLink:"template-driven-form"}
-  ];
-
+    menu: MenuEntry[] = [
+        { text: "Component Input Example", routerLink: "component-input-example" },
+        { text: "Component Output Example", routerLink:"component-output-example"},
+        { text: "@for Directive Example", routerLink:"for-directive-example"},
+        { text: "Event Bind Example", routerLink: "event-bind-example"},
+        { text: "Simple Data Table", routerLink: "simple-data-table"},
+        { text: "Template Driven Form", routerLink:"template-driven-form"},
+        { text: "Reactive Forms", routerLink: "reactive-forms"}
+    ]
 }

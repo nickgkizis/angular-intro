@@ -1,27 +1,32 @@
-@if(!person || !eperson.){
+@if(!person && !eperson){
     <div class="alert alert-danger text-center">no person details</div>
 }@else {
 
 <table class="table table-bordered w-50">
     <tr>
         <td class="fw-semibold">name</td>
-        <td class="ps-2">{{person.givenName}}</td>
+        <td class="ps-2">{{person?.givenName || eperson?.givenName}}</td>
     </tr>
     <tr>
         <td class="fw-semibold">lastname</td>
-        <td class="ps-2">{{person.surName}}</td>
+        <td class="ps-2">{{person?.surName || eperson?.surName}}</td>
     </tr>
-    <tr>
+    <!-- <tr>
         <td class="fw-semibold">street</td>
-        <td class="ps-2">{{person.address}}</td>
-    </tr>
+        <td class="ps-2">{{person?.address || eperson?.address}}</td>
+    </tr> -->
     <tr>
         <td class="fw-semibold">age</td>
-        <td class="ps-2">{{person.age}}</td>
+        <td class="ps-2">{{person?.age || eperson?.age}}</td>
     </tr>
     <tr>
         <td class="fw-semibold">mail</td>
-        <td class="ps-2">{{person.email}}</td>
+        <td class="ps-2">{{person?.email || eperson?.email}}</td>
+    </tr>
+
+    <tr>
+        <td class="fw-semibold">address</td>
+        <td class="ps-2">{{person?.address || eperson?.address}}</td>
     </tr>
     <!-- <tr>
         <td class="fw-semibold">state</td>
