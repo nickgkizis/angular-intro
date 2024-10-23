@@ -1,6 +1,10 @@
 <h4>{{ "@for" }} example</h4>
-  <div class="d-flex flex-column w-100 gap-2 flex-wrap text-nowrap">
-    @for (user of users; track user){
-      <app-person-table [person]="user"></app-person-table>
-    }
+  <div class="container overflow-auto" style="height: 50vh">
+    <div class="d-flex flex-column w-100 gap-2 flex-wrap text-nowrap">
+      @for (user of users; track user){
+        <app-person-table [person]="user"></app-person-table>
+      }
+    </div>
   </div>
+
+  
