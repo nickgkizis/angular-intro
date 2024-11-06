@@ -1,19 +1,20 @@
-export interface Address{
+export interface Address {
     street: string;
     city: string;
-    zipcode: string;
+    zipCode: string
+    number: string
 }
 
-export interface PhoneNumber{
+export interface PhoneNumber {
     number: string;
     type: string;
 }
-export interface Customer{
+
+export interface Customer {
     givenName: string;
     surName: string;
     email: string;
     afm: string;
-    phonNumber: PhoneNumber[];
+    phoneNumbers: PhoneNumber[];
     address: Address;
-
 }
